@@ -7,5 +7,5 @@ const tail = function(arr) {
       newArr.push(arr[i]);
     }
   } return newArr;
-}; console.log(tail(["Yo Yo", "Lighthouse", "Labs"]));
+}; 
 module.exports = tail
