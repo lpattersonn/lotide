@@ -1,5 +1,7 @@
 const tail = require('../tail')
-const assertEqual = require('../assertEqual')
-
-console.log(tail(["Yo Yo", "Lighthouse", "Labs"]));
-assertEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), [ 'Lighthouse', 'Labs' ])
+const assert = require('chai').assert
+describe('#tail', () => {
+  it("Should remove the first element of the array and return the array", () => {
+    assert.deepEqual(tail(["Yo Yo", "Lighthouse", "Labs"]), ['Lighthouse', 'Labs'])
+  });
+});
